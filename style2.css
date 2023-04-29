@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+*{
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{scroll-behavior: smooth}
+
+.txt-centrado{text-align: center}
+
+.logo{
+	height: 126px;
+	width: auto;
+}
+
+#inicio{
+	background: url('images/peopleworking.jpg') no-repeat top center;
+	background-size: cover;
+	min-height: 100vh;
+	position: relative;
+}
+
+/* Estilo del formulario de contacto */
+#formulario{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	padding-top:30px;
+}
+/* Sobreescribir el padding de la clase recuadro solo para el formulario */
+#formulario .recuadro{padding:10px}
+
+/* Estilo de los input del formulario */
+input[type="text"], input[type="email"], textarea{
+	width: 100%;
+	border: 1px solid #888;
+	border-radius: 5px;
+	padding: 7px 10px;
+}
+/* poner las etiquetas del formulario en la parte superior */
+label{vertical-align: top}
+
+/* un poco parecido el diseño al boton de profile de las tarjetas */
+.btn_enviar{
+	background-color: mediumseagreen;
+	margin:15px 0;
+	padding: 5px 20px;
+	color:white;
+	border-radius: 8px;
+	border: none;
+	float: right;
+}
+
+header{
+	z-index: 999; /* poner el menú por encima de todo */
+	width: 100%;
+	display: flex;
+	position: fixed;
+	background-color: #E2E2E2;
+}
+
+nav{
+	right: 50px;
+	top: 50px;	
+	margin: 0 auto;
+}
+
+nav ul{
+	margin-left: 15px;
+	display: flex;
+}
+
+nav li{
+	font-size: 1.1em;
+	margin: 50px 10px 50px 40px;
+	list-style: none;
+}
+
+nav a{
+	text-decoration: none;
+	color: black;
+}
+
+.avisos{
+	background-color: darkgrey;
+	padding: 15px 0;
+}
+.avisos span{
+	font-weight: bold;
+}
+
+.leyenda{
+	border: solid rgb(128, 128, 128) 1px;
+	background-color: rgba(225, 225, 224, 0.9);
+	padding: clamp(10px, 6vw, 50px);
+	border-radius: 5px;
+}
+
+.titulo{
+	position: absolute;
+	top: 25%;
+}
+
+.parrafo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 100%);
+}
+
+
+
+/* submenu (dropdown) */
+#menu li a:hover{
+	color:red
+}
+
+nav ul ul li{
+	float:none;
+	width:200px;
+}
+
+
+/* sub-elementos del dropdown */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {float: left}
+
+li a, .dropbtn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+/*Estilo para dropdown Servicios */
+.dropdown{
+	cursor: pointer;
+	margin-top:50px;
+}
+.dropdown:hover{
+	color:red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1; /* para que se ponga por encima */
+  background-color: #e2e2e2;
+}
+
+.dropdown-content a {
+  color: black;
+  display: block;
+  text-align: left;
+}
+
+
+
+.card-section {
+	min-height: 30rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: beige;
+	position: relative;
+}
+
+.card{
+	position: relative ;
+	width: 18rem;
+	height: 24rem;
+	border-radius: 18px;
+	overflow: hidden;
+	background-image: url("images/background-card.jpg");
+	background-size: cover;
+}
+
+.card-wrapper{
+	height: 6rem;
+	mask-position: relative;
+}
+
+.card-avatar{
+	position: absolute;
+	top: 10rem;
+	left: 50%;
+	border-radius: 50%;
+	overflow: hidden;
+	width: 7rem;
+	height: 7rem;
+	border: 5px solid rgb(184, 192, 210);
+	transform: translate(-50%,-110%);
+}
+
+.card-avatar img {
+	width: 100%;
+	height: 130%;
+}
+
+.card-avatar-Jeff{
+	position: absolute;
+	top: 10rem;
+	left: 50%;
+	border-radius: 50%;
+	overflow: hidden;
+	width: 7rem;
+	height: 7rem;
+	border: 5px solid rgb(184, 192, 210);
+	transform: translate(-50%,-110%);
+}
+
+.card-avatar-Jeff img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.card-about{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(215, 213, 213, 0.5);
+	align-items: center;
+	transform: translate(0,50%);
+}
+
+.card-texto{
+	font-size: 0.9em;
+	text-align: center;
+	align-items: flex-end;
+}
+
+.card-name {
+	font-size: 1.2rem;
+	color: black;
+	font-weight: 600;
+	margin-bottom: 0.8rem;
+}
+
+.profile-button {
+	width: 110px;
+	margin: 100px 0 0 90px;
+}
+
+.profile-button a {
+	text-decoration: none;
+	font-size: 0.8em;
+	border-radius: 8px;
+	color:#cccbcb;
+	background-color: mediumseagreen;
+	padding: 5px 20px;
+}
+
+.profile-button a:hover {
+	background-color: rgb(22, 142, 76);
+}
+
+
+
+footer{
+	background-color: #f5f5dc;
+}
+
+
+.introduccion a{
+	font-size: 0.9em;
+}
+
+.ideas li{
+	margin-top: 2px;
+}
+
+.mapa h2{margin-bottom: 10px}
+
+.mapa h4{margin-top: 10px}
+
+
+
+/* Slideshow */
+#presentacion{
+	padding: 30px;
+	background-color: #ede4c2;
+}
+/* contenedor del Slideshow */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 30px auto 0;
+}
+
+/* botones anterior, siguiente */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* indicativos del slideshow */
+.punto {
+  cursor: pointer; /*manita con dedo */
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active, .punto:hover {
+  background-color: #717171;
+}
+
+
+
+/* diseño a columnas (responsivas) */
+.recuadro{
+	padding:30px;
+	float: left;
+}
+/* clase para limpiar los float y no se encimen los divs */
+.clear{clear: both}
+
+@media (max-width: 575px) {
+	/*columnas*/
+	.col-sm-25{width:25%}
+	.col-sm-33{width:33.33%}
+	.col-sm-50{width:50%}
+	.col-sm-75{width:75%}
+	.col-sm-100{width:100%}
+	
+	/*margenes izquierdos*/
+	.ml-sm-0{margin-left:0}
+	.ml-sm-25{margin-left:25%}
+	.ml-sm-50{margin-left:50%}
+}
+
+@media (min-width: 576px) and (max-width:991px){
+	.col-md-25{width:25%}
+	.col-md-33{width:33.33%}
+	.col-md-50{
+		flex: 0 0 auto;
+		width: 50%;
+	}
+	.col-md-75{width:75%}
+	.col-md-100{width:100%}
+
+	.ml-md-0{margin-left:0}
+	.ml-md-15{margin-left:15%}
+	.ml-md-25{margin-left:25%}
+	.ml-md-50{margin-left:50%}
+}
+
+@media (min-width: 992px) {
+	.col-xl-25{width:25%}
+	.col-xl-33{width:33.33%}
+	.col-xl-50{
+		flex: 0 0 auto;
+		width: 50%;
+	}
+	.col-xl-75{width:75%}
+	.col-xl-100{width:100%}
+
+	.ml-xl-0{margin-left:0}
+	.ml-xl-15{margin-left:15%}
+	.ml-xl-25{margin-left:25%}
+	.ml-xl-50{margin-left:50%}
+}
+
+/* ajustar ciertos elementos a cuando la pantalla es pequeña */
+@media (max-width:990px){
+	#menu ul li{
+		font-size: 0.8rem;
+		margin: 50px 10px;
+	}
+
+	.dropdown-content li{
+		margin: 30px !important;
+	}
+
+	.logo{
+		height: 70px;
+		width: auto;
+		margin-top: 20px;
+	}
+
+	.titulo{
+		top: 25%;
+		left:0px;
+		margin:10px;
+	}
+
+	.parrafo{
+		top: 65%;
+		left:0px;
+		transform:none;
+		margin:10px;
+	}
+
+	.card-section{
+		display: block;
+		padding: 30px 0px;
+	}
+
+	.card{
+		margin:0 auto 30px;
+	}
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Proyecto Web</title>
+	<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+	<header class="header">
+		<!-- cambiar la imagen de logo según convenga por resolucion de pantalla -->
+		<picture>
+			<source srcset="images/staydigital_sm.png" media="(max-width: 990px)">
+			<img src="images/staydigital.png" alt="logotipo" class="logo">
+		</picture>
+
+		<nav id="menu">
+			<ul>
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#quienes">Quienes somos</a></li>
+				<li class="dropdown" onClick="javascript:desplegar()">Servicios
+					<ul class="dropdown-content">
+						<li><a href="#servicios">HTML Mastery</a></li>
+						<li><a href="#servicios">CSS Mastery</a></li>
+						<li><a href="#servicios">Javascript Mastery</a></li>
+					</ul>
+				</li>
+				<li><a href="#portafolio">Portafolio de trabajos</a></li> 
+				<li><a href="#contacto">Contactar</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<!-- -------------------------------------Inicio-------------------------------------------------------------------------------------->
+	<section class="contenedor" id="inicio">
+		<!-- en lugar de poner una imagen aqui, la declaramos como fondo en el css en #inicio -->
+		<!--<img class="img_home" src="images/peopleworking.jpg" alt="personas trabajando">-->	
+		<h1 class="titulo leyenda ml-sm-0 ml-md-15 ml-xl-25">La agencia de Marketing Digital mas prestigiosa</h1>
+		<p class="parrafo leyenda">Nuestro equipo, compuesto por especialistas en las distintas facetas del marketing digital y
+			el desarrollo web, acompaña a nuestros clientes en todas las fases de un proyecto. No somos un proveedor más,
+			buscamos una relación estrecha concada cliente.</p>
+	</section>
+
+	<!-- -------------------------------------Quienes somos-------------------------------------------------------------------------------------->
+	<section class="card-section" id="quienes">
+		<div class="card">
+			<div class="card-wrapper">
+				<div class="card-avatar">
+					<img src="images/chica-sonriendo.jpg" alt="persona sonriendo">
+				</div>
+			</div>
+
+			<div class="card-about">
+				<p class="card-name">Karen Gates Musk <span class="card-age"></span>24</span></p>
+				<p class="card-location"><em>Barcelona</em></p>
+				<p class="card-texto">Consultora especialista en desarrollo web y business intelligence<br>
+				Desarrollo Web &amp; Programación </p>
+			</div>
+
+			<div class="profile-button">
+				<a href="#">Ver perfil</a>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-wrapper">
+				<div class="card-avatar">
+					<img src="images/asiatico.jpg" alt="persona sonriendo">
+				</div>
+			</div>
+
+			<div class="card-about">
+				<p class="card-name">Tim Cook<span class="card-age"></span> 50</span></p>
+				<p class="card-location"><em>Bilbao</em></p>
+				<p class="card-texto">Consultora especialista en desarrollo web y business intelligence<br>
+				Desarrollo Web &amp; Programación </p>
+			</div>
+
+			<div class="profile-button">
+				<a href="#">Ver perfil</a>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-wrapper">
+				<div class="card-avatar-Jeff">
+					<img src="images/hombre-moreno.jpg" alt="persona sonriendo">
+				</div>
+			</div>
+
+			<div class="card-about">
+				<p class="card-name">Jeff Bezos<span class="card-age"></span> 35</span></p>
+				<p class="card-location"><em>Madrid</em></p>
+				<p class="card-texto">Consultora especialista en desarrollo web y business intelligence<br>
+				Desarrollo Web &amp; Programación.</p>
+			</div>
+
+			<div class="profile-button">
+				<a href="#">Ver perfil</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="presentacion">
+		<div class="slideshow-container">
+
+			<div class="slideshow">
+				<img src="images/slides/01.jpg" style="width:100%">
+			</div>
+			<div class="slideshow">
+				<img src="images/slides/02.jpg" style="width:100%">
+			</div>
+			<div class="slideshow">
+				<img src="images/slides/03.jpg" style="width:100%">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&lt;</a>
+			<a class="next" onclick="plusSlides(1)">&gt;</a>
+
+		</div>
+		<br>
+		<div style="text-align:center">
+			<span class="punto" onclick="currentSlide(1)"></span> 
+			<span class="punto" onclick="currentSlide(2)"></span> 
+			<span class="punto" onclick="currentSlide(3)"></span> 
+		</div>
+	</section>
+
+	<!-- -------------------------------------Servicios-------------------------------------------------------------------------------------->
+
+	<section id="servicios">
+		<!-- 100% de ancho en pantallas pequeñas y medianas (1 columna), 50% en grandes (2 columnas) -->
+		<div class="recuadro col-sm-100 col-md-100 col-xl-50">
+			<h2>Profesionales</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In similique vero rem tenetur natus doloremque adipisci dolorum, fugiat rerum eius temporibus iure voluptates dignissimos, aliquam ducimus dolorem reprehenderit? Delectus, numquam!</p>
+			
+			<h2>Comprometidos</h2>
+			<p>Nuestro objetivos es ser eficientes y rentables en el menor plazo de tiempo posible los proyectos de nuestros clientes.</p>
+		</div>	
+		
+		<div class="recuadro col-sm-100 col-md-100 col-xl-50">
+			<h2>Profesionales</h2>
+			<p>A lo largo de los años hemos depurado una metodologoia que minimiza los riesgos y garantiza los mejores resultados en el desarrollo de productos digitales  innovadores.</p>
+			
+			<h2>Comprometidos</h2>
+			<p>Nuestro objetivos es ser eficientes y rentables en el menor plazo de tiempo posible los proyectos de nuestros clientes.</p>
+
+			<h2>Económicos</h2>
+			<p>Ofrecemos soluciones a medida adaptadas a la realidad econimica de cada empresa, profesional o particular</p>
+		</div>
+	</section>
+	<div class="clear"></div>
+	<!-- -------------------------------------Contacto-------------------------------------------------------------------------------------->
+	
+	<footer id="contacto">
+		<form id="formulario" action="contacto.php" method="post">
+			<h2>Formulario de contacto</h2>
+			<p>Puede contactarnos usando el siguiente formulario</p>
+			
+			<!-- 100% de ancho en pantallas pequeñas y medianas, 50% en grandes (2 columnas) -->
+			<div class="recuadro col-sm-100 col-md-100 col-xl-50">
+				<label>Nombre</label>
+				<input type="text" name="nombre" required>
+			</div>
+	
+			<div class="recuadro col-sm-100 col-md-100 col-xl-50">
+				<label>Correo-E</label>
+				<input type="email" required name="correo">
+			</div>
+	
+			<div class="recuadro col-sm-100 col-md-100 col-xl-100">
+				<label>Mensaje</label>
+				<textarea required name="mensaje" rows="6"></textarea>
+			</div>
+	
+			<button type="submit" value="Enviar" class="btn_enviar">Enviar</button>
+		</form>
+
+		<div class="clear"></div>
+
+		<!-- 100% de ancho en pantallas pequeñas, 50% en medianas (2 columnas), 33% en grandes (3 columnas) -->
+		<div class="mapa recuadro col-sm-100 col-md-50 col-xl-33">
+			<h2>¿Dónde estamos?</h2>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.89542910652!2d-3.67953665!3d40.4379543!2m3!1f0i1024!!2f0!3f0!3m2!12i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e0!3m2!1sen!2ses!4v1680383723550!5m2!1sen!2ses"
+				width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade">
+			</iframe>
+			
+			<h3>Contacto</h3>
+			<address>
+				28942 Madrid, España 2023<br>
+				(+34) 641098097<br>
+				<a href="mailto:santiorozco23@hotmail.com">straydigital@hotmail.com</a>
+			</address>
+		</div>
+
+		<div class="introduccion recuadro col-sm-100 col-md-50 col-xl-33">
+			<h2>¿Cómo mejorar el SEO local de tu negocio en Madrid?</h2>
+			<p>Introducción El SEO local es una estrategia clave para las empresas que desean aumentar su
+				visibilidad en línea y atraer más clientes de su área geográfica. A medida que el comportamiento
+				del consumidor sigue evolucionando, más personas utilizan sus dispositivos...
+				<a target="_blank" href="https://unaagujaenunpajar.es/como-mejorar-el-seo-local-de-tu-negocio-en-madrid/">Ver más</a>
+			</p>
+		</div>
+
+		<div class="ideas recuadro col-sm-100 col-md-100 col-xl-33">
+			<h2>Ideas &amp; Consejos</h2>
+			<ul>
+				<li>Cómo elegir el mejor hosting para tu web</li>
+				<li>Guia de posicionamiento SEO WordPress</li>
+				<li>Instagram para empresas: ¿que poner en la biografía de instagram?</li>
+				<li>Cómo Optimizar Campañas de Google Ads</li>
+				<li>Cómo usar el Planificador de Palabras Clave de Google Ads</li>
+			</ul>
+		</div>
+
+		<div class="clear"></div>
+
+	</footer>
+
+	<section class="avisos txt-centrado">
+		<p><em><span>&copy; 2023 Stray Digital</span></em> La Mejor Agencia de Marketing Digital | Consultor Seo Madrid | Agencia SEO Madrid | Posicionamiento web<br>
+		Madrid Calle Rey Carlos, 62 28936 Madrid</p>
+	</section>
+
+	<script src="funciones.js"></script>
+</body>
+</html>
